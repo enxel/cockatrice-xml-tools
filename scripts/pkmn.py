@@ -150,7 +150,7 @@ for card in cards:
         cipt = None
 
     f.write(2*"\t"+"<card>\n")
-    f.write(3*"\t"+"<name>"+name+" ["+setCode+"]</name>\n")
+    f.write(3*"\t"+"<name>"+name+" ["+muid.upper()+"]</name>\n")
     f.write(3*"\t"+"<text>"+text+"</text>\n")
     f.write(3*"\t"+"<prop>\n")
     f.write(4*"\t"+"<maintype>"+maintype+"</maintype>\n")
