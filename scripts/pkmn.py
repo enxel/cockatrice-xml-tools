@@ -14,7 +14,8 @@ cost_dict = {
   "Metal": "{M}",
   "Fairy": "{Fy}",
   "Dragon": "{D}",
-  "Colorless": "{C}"
+  "Colorless": "{C}",
+  "Free": "   "
 }
 
 def format_cleanser(item):

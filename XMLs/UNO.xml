@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cockatrice_carddatabase version="4">
+	<sets>
+		<set>
+			<name>UNO</name>
+			<longname>The game ideal to lose friends.</longname>
+			<settype>Custom</settype>
+			<releasedate>Hace un vergo :^)</releasedate>
+		</set>
+	</sets>
+	<cards>
+		<card>
+			<name>anycolor</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="1" muid="1">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>blue_0</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="2" muid="2">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>blue_1</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="3" muid="3">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>blue_2</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="4" muid="4">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>blue_3</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="5" muid="5">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>blue_4</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="6" muid="6">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>blue_5</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="7" muid="7">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>blue_6</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="8" muid="8">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>blue_7</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="9" muid="9">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>blue_8</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="10" muid="10">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>blue_9</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="11" muid="11">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>blue_cancel</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="12" muid="12">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>blue_plus2</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="13" muid="13">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>blue_reverse</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="14" muid="14">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>green_0</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="15" muid="15">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>green_1</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="16" muid="16">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>green_2</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="17" muid="17">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>green_3</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="18" muid="18">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>green_4</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="19" muid="19">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>green_5</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="20" muid="20">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>green_6</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="21" muid="21">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>green_7</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="22" muid="22">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>green_8</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="23" muid="23">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>green_9</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="24" muid="24">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>green_cancel</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="25" muid="25">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>green_plus2</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="26" muid="26">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>green_reverse</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="27" muid="27">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>plus4</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="28" muid="28">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>red_0</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="29" muid="29">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>red_1</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="30" muid="30">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>red_2</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="31" muid="31">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>red_3</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="32" muid="32">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>red_4</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="33" muid="33">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>red_5</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="34" muid="34">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>red_6</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="35" muid="35">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>red_7</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="36" muid="36">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>red_8</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="37" muid="37">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>red_9</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="38" muid="38">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>red_cancel</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="39" muid="39">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>red_plus2</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="40" muid="40">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>red_reverse</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="41" muid="41">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>yellow_0</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="42" muid="42">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>yellow_1</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="43" muid="43">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>yellow_2</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="44" muid="44">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>yellow_3</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="45" muid="45">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>yellow_4</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="46" muid="46">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>yellow_5</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="47" muid="47">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>yellow_6</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="48" muid="48">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>yellow_7</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="49" muid="49">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>yellow_8</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="50" muid="50">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>yellow_9</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="51" muid="51">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>yellow_cancel</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="52" muid="52">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>yellow_plus2</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="53" muid="53">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>yellow_reverse</name>
+			<text>Just play it, dude!</text>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type> </type>
+				<maintype> </maintype>
+				<manacost> </manacost>
+				<cmc>0</cmc>
+				<format-legacy>legal</format-legacy>
+			</prop>
+			<set uuid="54" muid="54">UNO</set>
+			<related> </related>
+			<tablerow>2</tablerow>
+		</card>
+	</cards>
+</cockatrice_carddatabase>
