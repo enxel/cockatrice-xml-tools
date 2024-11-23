@@ -1,3 +1,4 @@
+
 import urllib.request, json
 
 req = urllib.request.Request(
@@ -18,6 +19,10 @@ req = urllib.request.Request(
 )
 cards = json.load(urllib.request.urlopen(req))
 
+#print(sets)
+#print(cards)
+#input()
+
 not_wanted = ["token","skill"]
 not_monsters = ["spell","trap"]
 not_pendulum = ["normal","effect","ritual","fusion","synchro","xyz","link"]
@@ -30,8 +35,9 @@ def format_cleanser(item):
     item = item.replace("<","&lt;")
     item = item.replace(">","&gt;")
     item = item.replace("&","&amp;")
-    item = item.replace("\'","&apos;")
     item = item.replace("\"","&quot;")
+    item = item.replace("\'\'","&quot;")
+    item = item.replace("\'","&apos;")
     return item
 
 f = open("Yu_Gi_Oh.xml","w")
@@ -73,7 +79,10 @@ for card in cards["data"]:
             text += "Attribute: "+card["attribute"]+"\n\n"
 
         if maintype in pendulum:
-            text += "Scale: "+str(card["scale"])+"\n\n"
+            if name == "Speedroid Wing Synchron":
+                text += "Scale: 4\n\n"
+            else:
+                text += "Scale: "+str(card["scale"])+"\n\n"
 
         if maintype in link:
             text += "Link markers: "+" | ".join(card["linkmarkers"])+"\n\n"
@@ -109,7 +118,9 @@ for card in cards["data"]:
         if "card_sets" in card:
             css = []
             for cs in card["card_sets"]:
-                css.append((cs["set_code"],cs["set_rarity"]))
+                css.append((cs["set_code"],format_cleanser(cs["set_rarity"])))
+                #if len(css) == 15:
+                #    break
 
         picURL = card["card_images"][0]["image_url"]
 

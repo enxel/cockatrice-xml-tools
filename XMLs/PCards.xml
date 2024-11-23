@@ -1,0 +1,256 @@
+<cockatrice_carddatabase version="4">
+  <cards>
+<card>
+    <name>Joker A</name>
+    <set picURL="https://i.imgur.com/bepE45g.png">Playing Cards</set>
+</card>
+<card>
+    <name>Queen♣</name>
+    <set picURL="https://i.imgur.com/J7PxCqp.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>Queen♦</name>
+    <set picURL="https://i.imgur.com/YIsVZRC.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>Queen♥</name>
+    <set picURL="https://i.imgur.com/J5wFXX7.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>Queen♠</name>
+    <set picURL="https://i.imgur.com/SzIOl3K.png">Playing Cards</set>
+</card>
+<card>
+    <name>King♣</name>
+    <set picURL="https://i.imgur.com/SzIOl3K.png">Playing Cards</set>
+</card>
+<card>
+    <name>King♦</name>
+    <set picURL="https://i.imgur.com/u7UFhUK.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>King♥</name>
+    <set picURL="https://i.imgur.com/uoug5ar.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>King♠</name>
+    <set picURL="https://i.imgur.com/IT1e3Ax.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>Jack♣</name>
+    <set picURL="https://i.imgur.com/GhWUXbT.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>Jack♦</name>
+    <set picURL="https://i.imgur.com/GnolzMW.png">Playing Cards</set>
+</card>
+<card>
+    <name>Jack♥</name>
+    <set picURL="https://i.imgur.com/ogptRhX.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>Jack♠</name>
+    <set picURL="https://i.imgur.com/nTU9ImB.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>Joker B</name>
+    <set picURL="https://i.imgur.com/hxLjf97.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>Ace♣</name>
+    <set picURL="https://i.imgur.com/FXsorAV.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>Ace♦</name>
+    <set picURL="https://i.imgur.com/RaJ9qxu.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>Ace♥</name>
+    <set picURL="https://i.imgur.com/fwD85z8.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>Ace♠</name>
+    <set picURL="https://i.imgur.com/J2mbtqR.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>10♣</name>
+    <set picURL="https://i.imgur.com/w7CyIcH.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>10♦</name>
+    <set picURL="https://i.imgur.com/8ocr677.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>10♥</name>
+    <set picURL="https://i.imgur.com/SfvgWR4.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>10♠</name>
+    <set picURL="https://i.imgur.com/O35oezu.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>9♣</name>
+    <set picURL="https://i.imgur.com/IeaA8YR.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>9♦</name>
+    <set picURL="https://i.imgur.com/Wh7kfyX.png">Playing Cards</set>
+</card>
+<card>
+    <name>9♥</name>
+    <set picURL="https://i.imgur.com/WVi037q.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>9♠</name>
+    <set picURL="https://i.imgur.com/tcs05Uw.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>8♣</name>
+    <set picURL="https://i.imgur.com/pvY3jtW.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>8♦</name>
+    <set picURL="https://i.imgur.com/4lQ70ac.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>8♥</name>
+    <set picURL="https://i.imgur.com/EVqZ21z.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>8♠</name>
+    <set picURL="https://i.imgur.com/K7usiJn.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>7♣</name>
+    <set picURL="https://i.imgur.com/UXGHCZX.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>7♦</name>
+    <set picURL="https://i.imgur.com/6PuByUH.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>7♥</name>
+    <set picURL="https://i.imgur.com/M0pyaDb.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>7♠</name>
+    <set picURL="https://i.imgur.com/CIefsnU.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>6♠</name>
+    <set picURL="https://i.imgur.com/eEke4jB.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>6♥</name>
+    <set picURL="https://i.imgur.com/3SNAjuf.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>6♦</name>
+    <set picURL="https://i.imgur.com/mTja9Vo.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>6♣</name>
+    <set picURL="https://i.imgur.com/z7hZPxS.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>5♠</name>
+    <set picURL="https://i.imgur.com/scfnvDe.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>5♥</name>
+    <set picURL="https://i.imgur.com/DMRWN7C.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>5♦</name>
+    <set picURL="https://i.imgur.com/93BSk1Z.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>5♣</name>
+    <set picURL="https://i.imgur.com/5V0j7D3.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>4♠</name>
+    <set picURL="https://i.imgur.com/5eUCKHd.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>4♥</name>
+    <set picURL="https://i.imgur.com/sce9Qj7.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>4♦</name>
+    <set picURL="https://i.imgur.com/zFZUdfv.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>4♣</name>
+    <set picURL="https://i.imgur.com/h6OJoxZ.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>3♠</name>
+    <set picURL="https://i.imgur.com/Q0zSr99.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>3♥</name>
+    <set picURL="https://i.imgur.com/6larBKZ.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>3♦</name>
+    <set picURL="https://i.imgur.com/K9FaD2e.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>3♣</name>
+    <set picURL="https://i.imgur.com/nDtPc9M.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>2♠</name>
+    <set picURL="https://i.imgur.com/4gq1Pqg.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>2♥</name>
+    <set picURL="https://i.imgur.com/aNwoHur.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>2♦</name>
+    <set picURL="https://i.imgur.com/ObVk8lv.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>2♣</name>
+    <set picURL="https://i.imgur.com/ObVk8lv.png?c=2">Playing Cards</set>
+</card>
+<card>
+    <name>50</name>
+    <set picURL="https://i.imgur.com/CqQALw8.jpg">Playing Cards</set> 
+</card>
+<card>
+    <name>500</name>
+    <set picURL="https://i.imgur.com/6m6YxMt.jpg">Playing Cards</set>
+</card>
+<card>
+    <name>100</name>
+    <set picURL="https://i.imgur.com/5RiluEX.jpg">Playing Cards</set>
+</card>
+<card>
+    <name>25</name>
+    <set picURL="https://i.imgur.com/GLdl8rV.jpg">Playing Cards</set>
+</card>
+<card>
+    <name>250</name>
+    <set picURL="https://i.imgur.com/r4tHPCT.jpg">Playing Cards</set>
+</card>
+<card>
+    <name>Dealer</name>
+    <set picURL="https://imgur.com/vGBlEDI.jpg">Playing Cards</set>
+</card>
+<card>
+    <name>Bet</name>
+    <set picURL="https://i.imgur.com/w6KJ7rL.jpg">Playing Cards</set>
+</card>
+<card>
+    <name>Check</name>
+    <set picURL="https://i.imgur.com/QzGDITC.jpg">Playing Cards</set>
+</card>
+<card>
+    <name>Fold</name>
+    <set picURL="https://imgur.com/3WkATQY.jpg">Playing Cards</set>
+</card>
+  </cards>
+</cockatrice_carddatabase>
