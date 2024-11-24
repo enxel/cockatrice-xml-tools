@@ -54,10 +54,8 @@ for card in cards:
         text = text + "\nEvolution Color: " + cardobj["evolution_color"]
     if cardobj["evolution_level"] != None and cardobj["evolution_level"] != "":
         text = text + "\nEvolution Level: " + str(cardobj["evolution_level"])
-    if text != "":
-        text = text + "\n\n"
     if cardobj["xros_req"] != "" and cardobj["xros_req"] != None:
-        text = text + "Xros Requirements: " + cardobj["xros_req"]
+        text = text + "\nXros Requirements: " + cardobj["xros_req"]
     if text != "":
         text = text + "\n\n"
     text = text + cardobj["main_effect"]
@@ -97,8 +95,7 @@ for card in cards:
     f.write("\t\t\t</prop>\n")
 
     picurl = "https://world.digimoncard.com/images/cardlist/card/"+card["cardnumber"]+".png"
-    parts = card["cardnumber"].split('-')
-    f.write("\t\t\t<set muid=\""+str(cardobj["tcgplayer_id"])+"\" rarity=\""+cardobj["rarity"]+"\" num=\""+str(parts[1])+"\" picURL=\""+picurl+"\">"+str(parts[0])+"</set>\n")
+    f.write("\t\t\t<set muid=\""+str(cardobj["tcgplayer_id"])+"\" rarity=\""+cardobj["rarity"]+"\" picURL=\""+picurl+"\">"+card["cardnumber"]+"</set>\n")
 
     f.write("\t\t\t<tablerow>"+positions[cardobj["type"]]+"</tablerow>\n")
 
