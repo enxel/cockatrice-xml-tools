@@ -1,7 +1,26 @@
-from pokemontcgsdk import Card
-from pokemontcgsdk import Set
+import asyncio
+from tcgdexsdk import TCGdex, Language
+
+async def test():
+    tcgdex = TCGdex(Language.EN)
+
+    card = await tcgdex.card.list()
+
+    print(len(card))
+
+asyncio.run(test())
+
+"""
+RestClient.configure("16dace50-17b0-49de-a796-c87a6360c7e8")
+
+print("Libraries imported")
+
+print("Requesting data...")
 cards = Card.all()
 sets = Set.all()
+print("Data obtained")
+
+a = input()
 
 cost_dict = {
   "Grass": "{G}",
@@ -184,3 +203,4 @@ f.write("</cockatrice_carddatabase>\n")
 f.close()
 
 print("It is done!")
+"""

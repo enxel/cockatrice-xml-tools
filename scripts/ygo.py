@@ -1,5 +1,7 @@
-
 import urllib.request, json
+from tqdm import tqdm
+
+print("Libraries imported")
 
 req = urllib.request.Request(
     url="https://db.ygoprodeck.com/api/v7/cardsets.php", 
@@ -8,7 +10,9 @@ req = urllib.request.Request(
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'
     }
 )
+print("Requesting sets...")
 sets = json.load(urllib.request.urlopen(req))
+print("Sets obtained")
 
 req = urllib.request.Request(
     url="https://db.ygoprodeck.com/api/v7/cardinfo.php",
@@ -17,7 +21,9 @@ req = urllib.request.Request(
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'
     }
 )
+print("Requesting cards...")
 cards = json.load(urllib.request.urlopen(req))
+print("Cards obtained")
 
 #print(sets)
 #print(cards)
@@ -46,7 +52,8 @@ f.write("<cockatrice_carddatabase version=\"4\">\n")
 
 f.write("\t<sets>\n")
 
-for sset in sets:
+print("Writing and cleaning set data...")
+for sset in tqdm(sets):
     name = sset["set_code"]
 
     longname = format_cleanser(sset["set_name"])
@@ -65,9 +72,12 @@ for sset in sets:
 
 f.write("\t</sets>\n")
 
+print("Set data written")
+
 f.write("\t<cards>\n")
 
-for card in cards["data"]:
+print("Writing and cleaning card data...")
+for card in tqdm(cards["data"]):
     maintype = card["frameType"]
     
     if maintype in everyone:
@@ -161,6 +171,8 @@ for card in cards["data"]:
             f.write(3*"\t"+"<set muid=\""+muid+"\" picURL=\""+picURL+"\"></set>\n")
         f.write(3*"\t"+"<tablerow>"+tablerow+"</tablerow>\n")
         f.write(2*"\t"+"</card>\n")
+        
+print("Card data written")
 
 f.write("\t</cards>\n")
 f.write("</cockatrice_carddatabase>\n")

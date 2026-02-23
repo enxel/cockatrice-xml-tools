@@ -1,5 +1,8 @@
 import time
 import urllib.request, json
+from tqdm import tqdm
+
+print("Libraries imported")
 
 base = "https://digimoncard.io/api-public/"
 baseUrl = base + "getAllCards.php?sort=name&series=Digimon+Card+Game&sortdirection=asc"
@@ -28,7 +31,11 @@ def format_cleanser(item):
         item = item.replace("\"","&quot;")
     return item
 
+print("Petitioning data...")
+
 cards = urlpetition(baseUrl)
+
+print("Data obtained")
 
 #print(cards)
 #print(len(cards))
@@ -39,7 +46,8 @@ f.write("<cockatrice_carddatabase version=\"4\">\n")
 
 f.write("\t<cards>\n")
 
-for card in cards:
+print("Writing and cleaning data...")
+for card in tqdm(cards):
     f.write("\t\t<card>\n")
     f.write("\t\t\t<name>"+format_cleanser(card["name"])+" ["+card["cardnumber"]+"]</name>\n")
 
@@ -102,6 +110,8 @@ for card in cards:
     f.write("\t\t</card>\n")
     
     time.sleep(0.75)
+
+print("Data written")
 
 f.write("\t</cards>\n")
 f.write("</cockatrice_carddatabase>\n")
