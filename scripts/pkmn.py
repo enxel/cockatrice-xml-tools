@@ -1,26 +1,8 @@
-import asyncio
+import time
+from tqdm import tqdm
 from tcgdexsdk import TCGdex, Language
 
-async def test():
-    tcgdex = TCGdex(Language.EN)
-
-    card = await tcgdex.card.list()
-
-    print(len(card))
-
-asyncio.run(test())
-
-"""
-RestClient.configure("16dace50-17b0-49de-a796-c87a6360c7e8")
-
 print("Libraries imported")
-
-print("Requesting data...")
-cards = Card.all()
-sets = Set.all()
-print("Data obtained")
-
-a = input()
 
 cost_dict = {
   "Grass": "{G}",
@@ -46,21 +28,32 @@ def format_cleanser(item):
         item = item.replace("\"","&quot;")
     return item
 
+print("Configuring data source...")
+tcgdex = TCGdex(Language.EN)
+print("Data source configured")
+
+print("Requesting data...")
+cards = tcgdex.card.listSync()
+sets = tcgdex.set.listSync()
+print(f"Data obtained:\n   - {len(cards)} cards obtained\n   - {len(sets)} sets obtained")
+
 f = open("PokemonTCG.xml","w")
 f.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n")
 f.write("<cockatrice_carddatabase version=\"4\">\n")
 
 f.write("\t<sets>\n")
 
-for sset in sets:
-    name = format_cleanser(sset.id.upper())
+print("Writing set data...")
+for sset in tqdm(sets):
+    fsset = tcgdex.set.getSync(sset.id)
 
-    longname = format_cleanser(sset.name)
+    name = format_cleanser(fsset.id.upper())
 
-    settype = format_cleanser(sset.series)
+    longname = format_cleanser(fsset.name)
 
-    releasedate = sset.releaseDate
-    releasedate = releasedate.replace("/","-")
+    settype = format_cleanser(fsset.serie.name)
+
+    releasedate = fsset.releaseDate
 
     f.write(2*"\t"+"<set>\n")
     f.write(3*"\t"+"<name>"+name+"</name>\n")
@@ -69,67 +62,55 @@ for sset in sets:
     f.write(3*"\t"+"<releasedate>"+releasedate+"</releasedate>\n")
     f.write(2*"\t"+"</set>\n")
 
+    time.sleep(0.2)
+
 f.write("\t</sets>\n")
+
+print("Set data written")
 
 f.write("\t<cards>\n")
 
-for card in cards:
+print("Writing card data...")
+for rcard in tqdm(cards):
+    if rcard.id == "exu-%3F":
+        continue
+    
+    card = tcgdex.card.getSync(rcard.id)
+
     name = format_cleanser(card.name)
     
     text = ""
 
-    if not(card.evolvesFrom == None):
-        text += "Evolves from: " + card.evolvesFrom + "\n\n"
-        
-    if not(card.ancientTrait == None):
-        at = card.ancientTrait
-        text += "Ancient Trait: " + at.name + "\n" + at.text + "\n\n"
+    if not(card.evolveFrom == None):
+        text += "Evolves from: " + card.evolveFrom + "\n\n"
         
     if not(card.abilities == None):
         for a in card.abilities:
-            text += a.type + " - " + a.name + "\n" + a.text + "\n\n"
+            text += a.type
+            if not(a.name == None):
+                text += " - " + a.name + "\n"
+            else:
+                text += "\n\n"
+            if not(a.effect == None):
+                text += a.effect + "\n\n"
 
     if not(card.attacks == None):
         for a in card.attacks:
-            for e in a.cost:
-                text += cost_dict[e]
-            if not(a.text == None):
-                text += "  " + a.name + "  " + str(a.damage) + "\n" + a.text + "\n\n"
-            else:
-                text += "  " + a.name + "  " + str(a.damage) + "\n\n"
-
-    if not(card.rules == None):
-        text += "Special rules:\n"
-        for r in card.rules:
-            text += r + "\n"
-        text += "\n"
-
-    text += "Weakness:\n"
-    if not(card.weaknesses == None):
-        for w in card.weaknesses:
-            text += cost_dict[w.type] + ": " + w.value + "\n"
-    text += "\n"
-
-    text += "Resistance:\n"
-    if not(card.resistances == None):
-        for r in card.resistances:
-            text += cost_dict[r.type] + ": " + r.value + "\n"
-    text += "\n"
+            if not(a.cost == None):
+                for e in a.cost:
+                    text += cost_dict[e]
+            if not(a.effect == None): 
+                text += "  " + a.name
+            text += "  " + str(a.damage) + "\n"
+            if not(a.effect == None):
+                text += a.effect + "\n\n"
 
     text += "Retreat cost: "
-    if not(card.retreatCost == None):
-        for e in card.retreatCost:
-            text += cost_dict[e]
+    if not(card.retreat == None):
+        text += str(card.retreat)
     text += "\n"
 
-    if not(card.flavorText == None):
-        text += "--------\n" + card.flavorText + "\n\n"
-
-    maintype = card.supertype
-
-    ttype = ""
-    if not(card.subtypes == None):
-        ttype += " / ".join(card.subtypes)
+    maintype = card.category
 
     if not(card.types == None):
         colors = ""
@@ -140,34 +121,29 @@ for card in cards:
 
     loyalty = card.hp
 
-    cmc = card.convertedRetreatCost
-
-    format_unlimited = card.legalities.unlimited
-    format_expanded = card.legalities.expanded
-    format_standard = card.legalities.standard
+    format_standard = card.legal.standard
+    format_expanded = card.legal.expanded
 
     rarity = format_cleanser(card.rarity)
 
     muid = format_cleanser(card.id)
 
-    picURL = card.images.large
+    if not(card.image == None):
+        picURL = card.image + "/high.png"
+    else:
+        picURL = ""
 
-    num = card.number
+    num = card.localId
 
     setCode = format_cleanser(card.set.id.upper())
 
-    if card.supertype == "Pokémon":
+    if maintype == "Pokémon":
         tablerow = 0
     else:
-        if card.supertype == "Trainer" and not(card.subtypes == None) and "Stadium" in card.subtypes:
+        if maintype == "Trainer":
             tablerow = 3
         else:
             tablerow = 2
-
-    if not(card.subtypes == None) and ("LEGEND" in card.subtypes or "BREAK" in card.subtypes):
-        cipt = 1
-    else:
-        cipt = None
 
     f.write(2*"\t"+"<card>\n")
     f.write(3*"\t"+"<name>"+name+" ["+muid.upper()+"]</name>\n")
@@ -177,30 +153,30 @@ for card in cards:
     f.write(4*"\t"+"<layout>normal</layout>\n")
     f.write(4*"\t"+"<manacost></manacost>\n")
     f.write(4*"\t"+"<side>front</side>\n")
-    f.write(4*"\t"+"<cmc>"+str(cmc)+"</cmc>\n")
-    f.write(4*"\t"+"<type>"+ttype+"</type>\n")
+    f.write(4*"\t"+"<cmc></cmc>\n")
+    f.write(4*"\t"+"<type></type>\n")
     if not(card.types == None):
         f.write(4*"\t"+"<colors>"+colors+"</colors>\n")
     f.write(4*"\t"+"<loyalty>"+str(loyalty)+"</loyalty>\n")
-    if not(format_unlimited == None):
-        f.write(4*"\t"+"<format-unlimited>Legal</format-unlimited>\n")
-    if not(format_expanded == None):
-        f.write(4*"\t"+"<format-expanded>Legal</format-expanded>\n")
     if not(format_standard == None):
         f.write(4*"\t"+"<format-standard>Legal</format-standard>\n")
+    if not(format_expanded == None):
+        f.write(4*"\t"+"<format-expanded>Legal</format-expanded>\n")
     f.write(3*"\t"+"</prop>\n")
     if rarity == None:
         f.write(3*"\t"+"<set muid=\""+muid+"\" picURL=\""+picURL+"\" num=\""+str(num)+"\">"+setCode+"</set>\n")
     else:
         f.write(3*"\t"+"<set rarity=\""+rarity+"\" muid=\""+muid+"\" picURL=\""+picURL+"\" num=\""+str(num)+"\">"+setCode+"</set>\n")
     f.write(3*"\t"+"<tablerow>"+str(tablerow)+"</tablerow>\n")
-    if not(cipt == None):
-        f.write(3*"\t"+"<cipt>"+str(cipt)+"</cipt>\n")
     f.write(2*"\t"+"</card>\n")
 
+    time.sleep(0.2)
+    
 f.write("\t</cards>\n")
+
+print("Card data written")
+
 f.write("</cockatrice_carddatabase>\n")
 f.close()
 
 print("It is done!")
-"""

@@ -12,7 +12,7 @@ req = urllib.request.Request(
 )
 print("Requesting sets...")
 sets = json.load(urllib.request.urlopen(req))
-print("Sets obtained")
+print(f"Sets obtained:\n   - {len(sets)} sets obtained")
 
 req = urllib.request.Request(
     url="https://db.ygoprodeck.com/api/v7/cardinfo.php",
@@ -23,11 +23,7 @@ req = urllib.request.Request(
 )
 print("Requesting cards...")
 cards = json.load(urllib.request.urlopen(req))
-print("Cards obtained")
-
-#print(sets)
-#print(cards)
-#input()
+print(f"Cards obtained:\n   - {len(cards)} cards obtained")
 
 not_wanted = ["token","skill"]
 not_monsters = ["spell","trap"]

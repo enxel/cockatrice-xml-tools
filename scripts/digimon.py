@@ -35,7 +35,7 @@ print("Petitioning data...")
 
 cards = urlpetition(baseUrl)
 
-print("Data obtained")
+print(f"Data obtained:\n   - {len(cards)} cards obtained")
 
 #print(cards)
 #print(len(cards))
@@ -109,7 +109,7 @@ for card in tqdm(cards):
 
     f.write("\t\t</card>\n")
     
-    time.sleep(0.75)
+    time.sleep(0.2)
 
 print("Data written")
 
