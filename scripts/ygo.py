@@ -23,7 +23,7 @@ req = urllib.request.Request(
 )
 print("Requesting cards...")
 cards = json.load(urllib.request.urlopen(req))
-print(f"Cards obtained:\n   - {len(cards)} cards obtained")
+print(f"Cards obtained:\n   - {len(cards['data'])} cards obtained")
 
 not_wanted = ["token","skill"]
 not_monsters = ["spell","trap"]
