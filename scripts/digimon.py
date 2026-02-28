@@ -29,6 +29,7 @@ def format_cleanser(item):
         item = item.replace("&","&amp;")
         item = item.replace("\'","&apos;")
         item = item.replace("\"","&quot;")
+        item = item.replace("\u00A0"," "
     return item
 
 print("Petitioning data...")
@@ -99,7 +100,7 @@ for card in tqdm(cards):
     if cardobj["stage"] != None and cardobj["stage"] != "":
         type = type + "-" + cardobj["stage"]
     if type != "":
-        f.write("\t\t\t\t<type>"+type+"</type>\n")
+        f.write("\t\t\t\t<type>"+format_cleanser(type)+"</type>\n")
     f.write("\t\t\t</prop>\n")
 
     picurl = "https://world.digimoncard.com/images/cardlist/card/"+card["cardnumber"]+".png"
